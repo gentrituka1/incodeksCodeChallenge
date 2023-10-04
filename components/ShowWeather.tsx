@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollView, View, Text } from "react-native";
-import ReusableSpinnyBoi from "./SpinnyB";
 
 type ShowWeatherProps = {
   weather: any;

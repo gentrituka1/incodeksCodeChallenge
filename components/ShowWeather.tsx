@@ -13,7 +13,7 @@ const helper = (data: any[]) => {
   const newArray = [];
 
   for (const item of data) {
-    if (item.dt_txt.includes(`18:00:00`)) {
+    if (item.dt_txt.includes(`15:00:00`)) {
       newArray.push(item);
     }
   }

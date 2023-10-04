@@ -10,8 +10,6 @@ import { getUserWeather } from "./api/weatherApi";
 export default function App() {
   const [weather, setWeather] = useState([]);
 
-  console.log(weather);
-
   useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();

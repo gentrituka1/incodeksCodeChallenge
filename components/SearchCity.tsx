@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextInput,
-  TouchableOpacity,
-  View,
-  Text,
-  StyleSheet,
-  Button,
-} from "react-native";
+import { TextInput, View, StyleSheet, Button } from "react-native";
 import { connect, ConnectedProps } from "react-redux";
 import { addCity } from "../redux/cityReducer";
 import { getWeather } from "../api/weatherApi";
@@ -26,7 +19,7 @@ const SearchCity: React.FC<PropsFromRedux> = ({ addCity, setWeather }) => {
     setWeather(response);
     if (searchCity === "" || response.cod === "404") return;
     addCity(city || searchCity);
-    setSearchCity(""); // Clear the input field
+    setSearchCity("");
   };
 
   const onChange = (event: any) => {

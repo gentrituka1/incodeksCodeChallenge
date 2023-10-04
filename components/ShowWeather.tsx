@@ -6,9 +6,6 @@ type ShowWeatherProps = {
 };
 
 const helper = (data: any[]) => {
-  const d = new Date();
-  const hour = d.getHours();
-
   const newArray = [];
 
   for (const item of data) {
